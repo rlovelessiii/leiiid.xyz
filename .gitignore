@@ -1,0 +1,13 @@
+# Dependencies
+/node_modules
+
+# Build directories
+/.cache
+/public
+
+# Logs
+yarn-error.log
+
+# Misc
+.DS_Store
+/.idea

@@ -1,0 +1,26 @@
+{
+  "name": "leiiid.xyz",
+  "version": "0.0.0",
+  "description": "Official Website for Loveless Engineering | Design | Development | Deployment",
+  "main": "index.js",
+  "repository": "https://github.com/rlovelessiii/leiiid.xyz",
+  "author": "Richard Loveless III (rlovelessiii)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "gatsby develop",
+    "prod": "gatsby build && gatsby serve",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^2.31.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
