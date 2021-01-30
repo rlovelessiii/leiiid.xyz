@@ -22,7 +22,8 @@
     "gatsby-plugin-emotion": "^5.3.0",
     "normalize.css": "^8.0.1",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-icons": "^4.1.0"
   },
   "devDependencies": {
     "ts-node": "^9.1.1",
