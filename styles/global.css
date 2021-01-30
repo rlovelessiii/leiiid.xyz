@@ -1,15 +1,47 @@
 :root {
-    --background-dark: #191b24;
-    --background: #2d3142;
-    --background-light: #4e5b72;
-    --primary: #6f84a1;
-    --secondary: #b0d7ff;
-    --accent: #8a7968;
-    --highlight: #ab9b87;
-    --foreground-dark: #ccc0ae;
-    --foreground: #ede4d4;
-    --foreground-light: #f9f6f1;
+    --font-family: 'Ubuntu', sans-serif;
+    --font-family-mono: 'Fira Code', 'Ubuntu', monospace;
+    --base-font-size: 20px;
+
+    --color0: #191b24;
+    --color1: #2d3142;
+    --color2: #4e5b72;
+    --color3: #6f84a1;
+    --color4: #b0d7ff;
+    --color5: #8a7968;
+    --color6: #ab9b87;
+    --color7: #ccc0ae;
+    --color8: #ede4d4;
+    --color9: #f9f6f1;
+
+    --background-dark: var(--color0);
+    --background: var(--color3);
+    --background-light: var(--color9);
+    --primary: var(--color1);
+    --secondary: var(--color2);
+    --accent: var(--color5);
+    --highlight: var(--color4);
+    --contrast: var(--color6);
+    --foreground-dark: var(--color0);
+    --foreground: var(--color8);
+    --foreground-light: var(--color9);
 
     --radius-hard: 2px;
     --radius-soft: 4px;
+    --border-thin: 2px solid;
+    --border-thick: 8px solid;
+    --underline-thin: 2px underline;
+    --underline-thick: 4px underline;
+}
+
+html,
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    background: var(--background);
+    color: var(--foreground);
+}
+
+a {
+    text-decoration: none;
 }
