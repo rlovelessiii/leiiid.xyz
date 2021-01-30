@@ -1,0 +1,15 @@
+:root {
+    --background-dark: #191b24;
+    --background: #2d3142;
+    --background-light: #4e5b72;
+    --primary: #6f84a1;
+    --secondary: #b0d7ff;
+    --accent: #8a7968;
+    --highlight: #ab9b87;
+    --foreground-dark: #ccc0ae;
+    --foreground: #ede4d4;
+    --foreground-light: #f9f6f1;
+
+    --radius-hard: 2px;
+    --radius-soft: 4px;
+}
