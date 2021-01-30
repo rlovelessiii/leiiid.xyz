@@ -7,7 +7,7 @@ const Brand = styled.div`
 `
 
 const Text = styled.h1`
-  font-weight: bold;
+  font-weight: var(--font-weight-heavy);
   cursor: pointer;
   color: var(--contrast);
   text-decoration: var(--underline-thick) var(--highlight);
