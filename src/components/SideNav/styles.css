@@ -1,0 +1,19 @@
+.nav {
+    top: 0;
+    left: 0;
+    box-shadow: 10px 0 20px var(--background-dark);
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        left: -12em;
+        transition: all 0.5s ease;
+        box-shadow: none;
+    }
+
+    .nav.clicked {
+        transform: translate(12em, 0);
+        transition: all 0.5s ease;
+        box-shadow: 10px 0 20px var(--background-dark);
+    }
+}
