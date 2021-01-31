@@ -32,12 +32,14 @@
     --foreground: var(--color8);
     --foreground-light: var(--color9);
 
-    --radius-hard: 2px;
-    --radius-soft: 4px;
+    --radius-hard: 4px;
+    --radius-soft: 8px;
     --border-thin: 2px solid;
     --border-thick: 8px solid;
     --underline-thin: 2px underline;
     --underline-thick: 4px underline;
+
+    --body-max-width: 1140px;
 }
 
 html,
