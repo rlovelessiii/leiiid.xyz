@@ -1,4 +1,5 @@
 .nav {
+    position: sticky;
     top: 0;
     left: 0;
     box-shadow: 10px 0 20px var(--background-dark);
@@ -6,6 +7,7 @@
 
 @media (max-width: 1200px) {
     .nav {
+        position: fixed;
         left: -12em;
         transition: all 0.5s ease;
         box-shadow: none;

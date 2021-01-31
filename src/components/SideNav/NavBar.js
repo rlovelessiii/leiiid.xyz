@@ -3,7 +3,6 @@ import styled from '@emotion/styled'
 import './styles.css'
 
 const NavWrapper = styled.header`
-  position: fixed;
   width: 12em;
   height: 100vh;
   z-index: 999;
