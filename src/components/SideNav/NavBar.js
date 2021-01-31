@@ -11,7 +11,6 @@ const NavWrapper = styled.header`
 export const NavBar = styled.nav`
   width: 100%;
   height: 100%;
-  padding: 1em 0;
   background: linear-gradient(180deg, var(--primary) 50%, var(--secondary) 100%);
   border-right: var(--border-thin) var(--contrast);
   overflow: auto;
