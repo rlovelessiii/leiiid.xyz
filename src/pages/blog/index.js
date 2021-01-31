@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-import metadata from '../../hooks/get-site-metadata'
 import postData from '../../hooks/get-post-data'
 
 import Layout from '../../components/Layout'
 import PostCardList from '../../components/PostCardList'
 import PostCard from '../../components/PostCard'
 
+const pageTitle = 'Leiiid by Example'
+
 const PageWrapper = styled.section`
   max-width: var(--body-max-width);
 `
 
 export default () => {
-  const { title } = metadata()
   const { edges } = postData()
 
   return (
-    <Layout title={title} >
+    <Layout title={pageTitle} >
       <PageWrapper>
         <PostCardList title="Latest Posts">
           {edges.map(({ node }) => (

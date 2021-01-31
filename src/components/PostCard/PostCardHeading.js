@@ -3,6 +3,8 @@ import styled from '@emotion/styled'
 
 const PostCardHeading = styled.h3`
   color: var(--foreground);
+  margin: 0;
+  padding: 0.5em 0.5em 0 0.5em;
 `
 
 export default ({ content }) => {

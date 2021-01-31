@@ -5,7 +5,7 @@ export const NavMenu = [
   },
   {
     name: 'Blog',
-    slug: '#',
+    slug: '/blog/',
   },
   {
     name: 'Contact',

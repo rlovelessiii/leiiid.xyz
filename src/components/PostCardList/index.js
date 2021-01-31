@@ -12,7 +12,7 @@ const PostCardList = styled.div`
 export default ({ title, children }) => {
   return (
     <>
-      <PostCardListHeading>{title}</PostCardListHeading>
+      <PostCardListHeading content={title} />
       <PostCardList>{children}</PostCardList>
     </>
   )
