@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import Head from './Head'
 import SideNav from './SideNav'
 import Footer from './Footer'
 
@@ -21,16 +22,19 @@ const Body = styled.body`
 const Main = styled.main`
 `
 
-export default ({ children }) => {
+export default ({ title, children }) => {
   return (
-    <Wrapper>
-      <SideNav />
-      <BodyWrapper>
-        <Body>
-          <Main>{children}</Main>
-          <Footer />
-        </Body>
-      </BodyWrapper>
-    </Wrapper>
+    <>
+      <Head title={title} />
+      <Wrapper>
+        <SideNav />
+        <BodyWrapper>
+          <Body>
+            <Main>{children}</Main>
+            <Footer />
+          </Body>
+        </BodyWrapper>
+      </Wrapper>
+    </>
   )
 }
