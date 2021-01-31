@@ -11,7 +11,7 @@ export default () => {
   const { copyright } = metadata()
   return (
     <Copyright>
-      Copyright &#169; {copyright.year} | {copyright.author}
+      Copyright &#169; {copyright.year} ]|[ {copyright.author}
     </Copyright>
   )
 }

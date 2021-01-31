@@ -19,7 +19,7 @@ export default ({ title }) => {
                  maximum-scale=1.0,
                  user-scalable=no"
       />
-      <title>Leiiid.xyz ||| {title}</title>
+      <title>Leiiid.xyz ]|[ {title}</title>
     </Helmet>
   )
 }
