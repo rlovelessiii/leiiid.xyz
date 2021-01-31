@@ -1,15 +1,36 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import SideNav from './SideNav'
+import Footer from './Footer'
 
 const Wrapper = styled.div`
-  width: 100vw;
+  display: flex;
+  flex-direction: row;
 `
 
-export default () => {
+const BodyWrapper = styled.div`
+  max-width: var(--body-max-width);
+  margin: 0 auto;
+`
+
+const Body = styled.body`
+  display: flex;
+  flex-direction: column;
+`
+
+const Main = styled.main`
+`
+
+export default ({ children }) => {
   return (
     <Wrapper>
       <SideNav />
+      <BodyWrapper>
+        <Body>
+          <Main>{children}</Main>
+          <Footer />
+        </Body>
+      </BodyWrapper>
     </Wrapper>
   )
 }
