@@ -11,7 +11,8 @@ const PositionWrapper = styled.div`
 
 const Button = styled.button`
   border: none;
-  height: 2em;
+  height: 40px;
+  width: 35px;
   cursor: pointer;
   border-top-right-radius: var(--radius-hard);
   border-bottom-right-radius: var(--radius-hard);
@@ -24,7 +25,9 @@ const Button = styled.button`
   
   .icon {
     color: var(--highlight);
-    margin-top: 0.3em;
+    height: 100%;
+    width: 100%;
+    margin-left: 3px;
   }
   
   /*
