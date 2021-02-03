@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 :root {
-    --font-family: 'Ubuntu', sans-serif;
-    --font-family-mono: 'Fira Code', 'Ubuntu', monospace;
+    --font-family: 'Fira Sans', sans-serif;
+    --font-family-alt: 'PT Mono', monospace;
+    --font-family-mono: 'Courier Prime', monospace;
     --base-font-size: 20px;
     --font-weight-light: 300;
     --font-weight-base: 400;
@@ -29,6 +32,7 @@
     --highlight: var(--color4);
     --contrast: var(--color6);
     --foreground-dark: var(--color0);
+    --foreground-alt: var(--color7);
     --foreground: var(--color8);
     --foreground-light: var(--color9);
 
@@ -46,10 +50,93 @@ html,
 body {
     font-family: var(--font-family);
     font-size: var(--base-font-size);
+    font-weight: var(--font-weight-base);
     background: var(--background);
     color: var(--foreground);
 }
 
 a {
     text-decoration: none;
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+Golden Ratio Typography Settings https://grtcalculator.com
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+ul,ol,p,blockquote {
+    max-width: 680px;
+    line-height: 1.7rem;
+}
+
+.h0 {
+    font-size: 2.6rem;
+    font-weight: var(--font-weight-heavy);
+    line-height: 1.558em;
+    margin-bottom: 2.75rem;
+}
+
+h1 {
+    font-size: 2.05rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.585em;
+    margin-bottom: 1.7rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.625em;
+    margin-top: 2.75rem;
+    margin-bottom: 1.05rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.64em;
+    margin-top: 1.7rem;
+    margin-bottom: 0.65rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: var(--font-weight-heavy);
+    line-height: 1.7em;
+    margin-bottom: 0.4rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.75em;
+    margin-bottom: 0.25rem;
+}
+
+h6 {
+    font-size: 0.675rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.79em;
+    margin-bottom: 0.2rem;
+}
+
+p, ul, ol, blockquote {
+    margin-bottom: 1.7rem;
+}
+
+ul, ol {
+    margin-left: 1.7rem;
+}
+
+li {
+    margin-bottom: 0.65rem;
+}
+
+blockquote {
+    padding-left: 1.05rem;
+}
+
+code,pre,kbd {
+    font-size: 0.9rem;
 }

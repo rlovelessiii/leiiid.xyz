@@ -1,0 +1,194 @@
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ *
+ * Altered for https://leiiid.xyz by @author Richard Loveless III (rlovelessiii)
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #ccc;
+    font-family: var(--font-family-mono);
+    font-weight: 400;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5em;
+
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    font-size: 1em;
+    background: var(--primary);
+    padding: .1em .3em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #999;
+}
+
+.token.punctuation {
+    color: #ddd;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+    color: #e2777a;
+}
+
+.token.function-name {
+    color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+    color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+    color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+    color: #cc99cd;
+    font-style: italic;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.inserted,
+.token.variable {
+    color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+    color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+/**
+    gatsby-remark-prismjs plugin styling
+ */
+
+.gatsby-highlight {
+    background-color: var(--primary);
+    border-radius: var(--radius-hard);
+    overflow: auto;
+    margin: 1rem 0;
+    padding: 0;
+    background-image: url(/images/window-buttons.png);
+    background-repeat: no-repeat;
+    background-size: 44px 10px;
+    background-position: 16px 14px;
+    box-shadow: 1px 5px 5px var(--contrast);
+}
+
+.gatsby-highlight pre[class*="language-"] {
+    background-color: transparent;
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 0;
+    overflow: initial;
+    min-width: fit-content;
+}
+
+/**
+ * Prism line-highlight plugin
+ */
+.gatsby-highlight-code-line {
+    background-color: #3a3f55;
+    display: block;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    border-left: 0.3em solid var(--highlight);
+}
+
+/**
+ * Prism line-numbers plugin
+ */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+    padding-left: 2rem;
+}
+
+.deleted-sign {
+    background-color: #463f55;
+    display: block;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    border-left: 0.3em solid #ff0000;
+}
+
+.inserted-sign {
+    background-color: #3a5055;
+    display: block;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    border-left: 0.3em solid #00ff00;
+}
+
+/**
+ * Prism command-line plugin
+ */
+.command-line-prompt > span:before {
+    color: #999;
+    content: " ";
+    display: block;
+    padding-right: 0.8em;
+}
+
+/* Prompt for all users */
+.command-line-prompt > span[data-user]:before {
+    content: "$";
+}
+
+/* Prompt for root */
+.command-line-prompt > span[data-user="root"]:before {
+    content: "#";
+}
+
+.command-line-prompt > span[data-prompt]:before {
+    content: attr(data-prompt);
+}
