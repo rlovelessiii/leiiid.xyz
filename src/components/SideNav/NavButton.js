@@ -34,7 +34,7 @@ const Button = styled.button`
   Hide button when screen is on desktops, show when on smaller devices
    */
   display: none;
-  @media (max-width: 1200px) {
+  @media (max-width: 1140px) {
     display: inline;
   }
 `

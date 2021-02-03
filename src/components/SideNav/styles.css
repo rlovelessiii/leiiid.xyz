@@ -5,7 +5,7 @@
     box-shadow: 10px 0 20px var(--background-dark);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1140px) {
     .nav {
         position: fixed;
         left: -12em;

@@ -5,11 +5,13 @@ import { Link } from 'gatsby'
 export const NavList = styled.ul`
   list-style: none;
   text-align: left;
+  margin: 0;
   padding-left: 0;
   padding-bottom: 1em;
 `
 
 const NavItem = styled.li`
+  font-family: var(--font-family-alt);
   color: var(--foreground);
   transition: all 0.2s;
   margin: 0;
