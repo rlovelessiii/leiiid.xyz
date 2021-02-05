@@ -118,13 +118,14 @@ pre[class*="language-"] {
     background-color: var(--primary);
     border-radius: var(--radius-hard);
     overflow: auto;
-    margin: 1rem 0;
+    margin: 1rem -2rem;
     padding: 0;
     background-image: url(/images/window-buttons.png);
     background-repeat: no-repeat;
-    background-size: 44px 10px;
-    background-position: 16px 14px;
+    background-size: 2.2rem 0.5rem;
+    background-position: 0.8rem 0.7rem;
     box-shadow: 1px 5px 5px var(--contrast);
+    max-width: 100vw;
 }
 
 .gatsby-highlight pre[class*="language-"] {
@@ -132,7 +133,6 @@ pre[class*="language-"] {
     margin: 2rem 1rem 1rem 1rem;
     padding: 0;
     overflow: initial;
-    min-width: fit-content;
 }
 
 /**
@@ -146,11 +146,15 @@ pre[class*="language-"] {
     border-left: 0.3em solid var(--highlight);
 }
 
+.gatsby-highlight-code-line > .gatsby-highlight-code-line {
+    border: none;
+}
+
 /**
  * Prism line-numbers plugin
  */
 .gatsby-highlight pre[class*="language-"].line-numbers {
-    padding-left: 2rem;
+    padding-left: 2.8rem;
 }
 
 .deleted-sign {

@@ -14,13 +14,11 @@ const BodyWrapper = styled.div`
   margin: 0 auto;
 `
 
-const Body = styled.body`
+const Main = styled.main`
   display: flex;
   flex-direction: column;
 `
 
-const Main = styled.main`
-`
 
 export default ({ title, children }) => {
   return (
@@ -29,10 +27,8 @@ export default ({ title, children }) => {
       <Wrapper>
         <SideNav />
         <BodyWrapper>
-          <Body>
-            <Main>{children}</Main>
-            <Footer />
-          </Body>
+          <Main>{children}</Main>
+          <Footer />
         </BodyWrapper>
       </Wrapper>
     </>

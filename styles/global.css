@@ -38,8 +38,8 @@
 
     --radius-hard: 4px;
     --radius-soft: 8px;
-    --border-thin: 2px solid;
-    --border-thick: 8px solid;
+    --border-thin: 0.1rem solid;
+    --border-thick: 0.4rem solid;
     --underline-thin: 2px underline;
     --underline-thick: 4px underline;
 
@@ -121,12 +121,15 @@ h6 {
     margin-bottom: 0.2rem;
 }
 
-p, ul, ol, blockquote {
-    margin-bottom: 1.7rem;
+article > h6 {
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.75em;
+    margin-bottom: 0.25rem;
 }
 
-ul, ol {
-    margin-left: 1.7rem;
+p, ul, ol, blockquote {
+    margin-bottom: 1.7rem;
 }
 
 li {
@@ -139,4 +142,65 @@ blockquote {
 
 code,pre,kbd {
     font-size: 0.9rem;
+}
+
+@media all and (max-width: 646px) {
+    html,
+    body {
+        font-size: 19px;
+    }
+}
+@media all and (max-width: 612px) {
+    html,
+    body {
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 578px) {
+    html,
+    body {
+        font-size: 17px;
+    }
+}
+@media all and (max-width: 544px) {
+    html,
+    body {
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 510px) {
+    html,
+    body {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 476px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 442px) {
+    html,
+    body {
+        font-size: 13px;
+    }
+}
+@media all and (max-width: 408px) {
+    html,
+    body {
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 374px) {
+    html,
+    body {
+        font-size: 11px;
+    }
+}
+@media all and (max-width: 340px) {
+    html,
+    body {
+        font-size: 10px;
+    }
 }
