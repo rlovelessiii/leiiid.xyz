@@ -4,8 +4,8 @@ import { BsThreeDotsVertical } from 'react-icons/all'
 
 const PositionWrapper = styled.div`
   position: absolute;
-  top: 2em;
-  left: 11.8em;
+  top: 40px;
+  left: 195px;
   z-index: -1;
 `
 

@@ -8,13 +8,13 @@
 @media (max-width: 1140px) {
     .nav {
         position: fixed;
-        left: -12em;
+        left: -202px;
         transition: all 0.5s ease;
         box-shadow: none;
     }
 
     .nav.clicked {
-        transform: translate(12em, 0);
+        transform: translate(200px, 0);
         transition: all 0.5s ease;
         box-shadow: 10px 0 20px var(--background-dark);
     }

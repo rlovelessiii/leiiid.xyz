@@ -3,7 +3,8 @@ import styled from '@emotion/styled'
 import './styles.css'
 
 const NavWrapper = styled.header`
-  width: 12em;
+  font-size: 20px;
+  width: 200px;
   height: 100vh;
   z-index: 999;
 `

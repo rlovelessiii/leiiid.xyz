@@ -24,10 +24,10 @@ const NavItem = styled.li`
   }
 `
 
-export const NavListItem = (props) => {
+export const NavListItem = ({ slug, key, name }) => {
   return (
-    <Link to={props.slug}>
-      <NavItem key={props.key}>{props.name}</NavItem>
+    <Link to={slug}>
+      <NavItem key={key}>{name}</NavItem>
     </Link>
   )
 }
