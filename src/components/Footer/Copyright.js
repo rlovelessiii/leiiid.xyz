@@ -4,7 +4,7 @@ import metadata from '../../hooks/get-site-metadata'
 
 
 const Copyright = styled.p`
-  font-size: 0.55em;
+  font-size: 0.6rem;
 `
 
 export default () => {
