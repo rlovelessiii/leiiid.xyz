@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+const ArticleBodyWrapper = styled.div`
+  width: 100%;
+`
+
 const ArticleBody = styled.article`
   padding: 2rem;
   max-width: 680px;
-  width: 100%;
   margin: 0 auto;
   
   a {
@@ -39,5 +42,9 @@ const ArticleBody = styled.article`
 `
 
 export default ({ html }) => {
-  return <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
+  return (
+    <ArticleBodyWrapper>
+      <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
+    </ArticleBodyWrapper>
+  )
 }
