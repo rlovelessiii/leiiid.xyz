@@ -30,6 +30,7 @@ module.exports = {
       options: {
         plugins: [
           'gatsby-remark-autolink-headers',
+          'gatsby-remark-responsive-iframe',
           {
             resolve: `gatsby-remark-table-of-contents`,
             options: {
