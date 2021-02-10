@@ -1,13 +1,16 @@
 # Dependencies
-/node_modules
+node_modules
 
 # Build directories
-/.cache
-/public
+.cache
+public
 
 # Logs
 yarn-error.log
 
 # Misc
 .DS_Store
-/.idea
+.idea
+
+.obsidian
+templates
