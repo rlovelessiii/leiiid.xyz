@@ -1,7 +1,7 @@
 export const NavMenu = [
   {
     name: 'Projects',
-    slug: '#',
+    slug: '/projects/',
   },
   {
     name: 'Blog',
