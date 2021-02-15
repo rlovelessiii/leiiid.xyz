@@ -5,6 +5,9 @@ node_modules
 .cache
 public
 
+# Env files
+.env.*
+
 # Logs
 yarn-error.log
 
@@ -12,5 +15,6 @@ yarn-error.log
 .DS_Store
 .idea
 
+# Blog related directories
 .obsidian
 templates
