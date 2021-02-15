@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 const PostCardDate = styled.h5`
   font-family: var(--font-family-alt);
   margin: 0;
-  padding: 0.5em 1.5em 1em 1.5em;
+  padding: 0.5rem 1rem;
   color: var(--contrast);
 `
 

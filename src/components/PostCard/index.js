@@ -5,22 +5,20 @@ import { Link } from 'gatsby'
 import PostCard from './PostCard'
 import PostCardImage from './PostCardImage'
 import PostCardHeading from './PostCardHeading'
-import PostCardSubHeading from './PostCardSubHeading'
+import PostCardDate from './PostCardDate'
 
 const Wrapper = styled.div`
-  margin: 1em auto;
-  width: 33%;
-  min-width: 300px;
+  width: 100%;
 `
 
-export default ({ id, slug, img, title, date }) => {
+export default ({ id, slug, img, heading, date }) => {
   return (
     <Wrapper>
       <Link to={slug}>
         <PostCard key={id}>
-          <PostCardImage src={img} />
-          <PostCardHeading content={title} />
-          <PostCardSubHeading content={date} />
+          {img && <PostCardImage src={img} />}
+          {heading && <PostCardHeading content={heading} />}
+          {date && <PostCardDate content={date} />}
         </PostCard>
       </Link>
     </Wrapper>
