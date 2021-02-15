@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 export default () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
-      query {
+      query postData {
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           totalCount
           edges {
