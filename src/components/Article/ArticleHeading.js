@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 const ArticleHeadingWrapper = styled.div`
   margin-top: -1rem;
   padding: 2rem;
-  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);  
+  background: var(--background-fade);
   border-bottom: var(--border-thick) var(--accent);
 `
 

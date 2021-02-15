@@ -9,7 +9,7 @@ import { ArticleFooter } from './ArticleFooter'
 const ArticleWrapper = styled.div`
   background: var(--foreground-light);
   color: var(--foreground-dark);
-  box-shadow: 0 5px 10px var(--background-dark);
+  box-shadow: var(--shadow-main) var(--background-dark);
 `
 
 export default ({ title, author, date, image, html }) => {
