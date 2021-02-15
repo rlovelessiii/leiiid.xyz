@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 10px 0 20px var(--background-dark);
+    box-shadow: 10px 0 20px 10px var(--background-dark);
 }
 
 @media (max-width: 1140px) {
@@ -16,6 +16,6 @@
     .nav.clicked {
         transform: translate(200px, 0);
         transition: all 0.5s ease;
-        box-shadow: 10px 0 20px var(--background-dark);
+        box-shadow: 10px 0 20px 10px var(--background-dark);
     }
 }
