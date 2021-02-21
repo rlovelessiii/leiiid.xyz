@@ -1,24 +1,40 @@
 import React from 'react'
-import styled from '@emotion/styled'
+import {
+  Article,
+  ArticleImageContainer,
+  ArticleImage,
+  ArticleImageSource,
+  ArticleHeading,
+  ArticleTitle,
+  ArticleAuthor,
+  ArticleDate,
+  ArticleContainer,
+  ArticleBody,
+  ArticleFooter,
+} from './styles'
 
-import ArticleImage from './ArticleImage'
-import ArticleHeading from './ArticleHeading'
-import ArticleBody from './ArticleBody'
-import { ArticleFooter } from './ArticleFooter'
-
-const ArticleWrapper = styled.div`
-  background: var(--foreground-light);
-  color: var(--foreground-dark);
-  box-shadow: var(--shadow-main) var(--background-dark);
-`
-
-export default ({ title, author, date, image, html }) => {
+export default ({ title, author, date, img, imgSrc, imgSrcUrl, imgCred, imgGPS, html }) => {
   return (
-    <ArticleWrapper>
-      {image !== null && <ArticleImage src={image} />}
-      <ArticleHeading title={title} author={author} date={date} />
-      <ArticleBody html={html} />
+    <Article>
+      <ArticleImageContainer>
+        <ArticleImage src={img}/>
+        <ArticleImageSource>
+          Source: <a href={imgSrcUrl} target="_blank" rel="noreferrer noopener">{imgSrc}</a>
+          &nbsp; | &nbsp;
+          Credit: {imgCred}
+          &nbsp; | &nbsp;
+          Location: {imgGPS}
+        </ArticleImageSource>
+      </ArticleImageContainer>
+      <ArticleHeading>
+        <ArticleTitle>{title}</ArticleTitle>
+        <ArticleAuthor>author: {author}</ArticleAuthor>
+        <ArticleDate>published: {date}</ArticleDate>
+      </ArticleHeading>
+      <ArticleContainer>
+        <ArticleBody dangerouslySetInnerHTML={{ __html: html }} />
+      </ArticleContainer>
       <ArticleFooter />
-    </ArticleWrapper>
+    </Article>
   )
 }
