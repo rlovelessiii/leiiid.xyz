@@ -1,26 +1,31 @@
 import React from 'react'
-import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
-import PostCard from './PostCard'
-import PostCardImage from './PostCardImage'
-import PostCardHeading from './PostCardHeading'
-import PostCardDate from './PostCardDate'
+import {
+  PostCard,
+  PostCardImage,
+  PostCardHeading,
+  PostCardDate,
+  PostCardDescription,
+  PostCardFooter,
+} from './styles'
 
-const Wrapper = styled.div`
-  width: 100%;
-`
-
-export default ({ id, slug, img, heading, date }) => {
+export default ({ id, slug, img, heading, date, description, tags }) => {
   return (
-    <Wrapper>
-      <Link to={slug}>
-        <PostCard key={id}>
-          {img && <PostCardImage src={img} />}
-          {heading && <PostCardHeading content={heading} />}
-          {date && <PostCardDate content={date} />}
-        </PostCard>
-      </Link>
-    </Wrapper>
-  )
+  <Link to={slug}>
+    <PostCard key={id}>
+      {img && <PostCardImage src={img} />}
+      {heading && <PostCardHeading>{heading}</PostCardHeading>}
+      {date && <PostCardDate>{date}</PostCardDate>}
+      {description && <PostCardDescription><h5>{description}</h5></PostCardDescription>}
+      {tags &&
+      <PostCardFooter>
+        {tags.map(tag => (
+          <span>{tag}</span>
+        ))}
+      </PostCardFooter>
+      }
+    </PostCard>
+  </Link>
+)
 }
